@@ -1,7 +1,7 @@
 var fs = require('fs');
 var archiver = require('archiver');
 
-var output = fs.createWriteStream(__dirname + '/VueNote.zip');
+var output = fs.createWriteStream(__dirname + '/VNote.zip');
 var archive = archiver('zip', {
   zlib: { level: 9 }
 });
