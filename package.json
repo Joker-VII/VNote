@@ -1,0 +1,73 @@
+{
+  "name": "VueNote",
+  "version": "1.0.0",
+  "description": "一个简单的文本编辑器，随时记录你的想法",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "dev": "rimraf dist && webpack --watch --hide-modules",
+    "prod": "rimraf dist && cross-env NODE_ENV=production webpack --watch --hide-modules",
+    "zip": "node zip.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@ckeditor/ckeditor5-basic-styles": "^15.0.0",
+    "@ckeditor/ckeditor5-block-quote": "^15.0.0",
+    "@ckeditor/ckeditor5-editor-classic": "^15.0.0",
+    "@ckeditor/ckeditor5-essentials": "^15.0.0",
+    "@ckeditor/ckeditor5-font": "^15.0.0",
+    "@ckeditor/ckeditor5-horizontal-line": "^15.0.0",
+    "@ckeditor/ckeditor5-list": "^15.0.0",
+    "@ckeditor/ckeditor5-theme-lark": "^15.0.0",
+    "@ckeditor/ckeditor5-vue": "^1.0.0",
+    "@tinymce/tinymce-vue": "^3.0.1",
+    "element-ui": "^2.12.0",
+    "lodash": "^4.17.15",
+    "tinymce": "^5.1.2",
+    "vue": "^2.6.10",
+    "vue-quill-editor": "^3.0.6",
+    "vuex": "^3.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@ckeditor/ckeditor5-dev-utils": "^12.0.5",
+    "@ckeditor/ckeditor5-dev-webpack-plugin": "^8.0.5",
+    "archiver": "^3.1.1",
+    "autoprefixer": "^9.7.2",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.5",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.3.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "fs": "0.0.1-security",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^4.0.0",
+    "rimraf": "^3.0.0",
+    "style-loader": "^1.0.0",
+    "terser-webpack-plugin": "^2.2.1",
+    "url-loader": "^2.3.0",
+    "vue-loader": "^15.7.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

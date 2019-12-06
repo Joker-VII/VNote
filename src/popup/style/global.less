@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+// 滚动条整体部分
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+// 滚动条两端按钮
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+// 滚动条
+::-webkit-scrollbar-thumb {
+  min-height: 30px;
+  border-radius: 5px;
+  background-color: rgb(221, 222, 224);
+  transition: all .2s;
+}
